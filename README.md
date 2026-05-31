@@ -1,72 +1,52 @@
-# Getting Started with Create React App
+# 🎱 Interactive JS Bingo Game (Juego del Bingo)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Un motor algorítmico y visual para el juego interactivo del Bingo en la web, desarrollado en **JavaScript puro (ES6+)**. Implementa una lógica matemática sólida para el sorteo de esferas aleatorias sin repetición, la gestión de cartones de jugadores y la validación en tiempo real de líneas y Bingo.
 
-## Available Scripts
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=flat-square&logo=javascript)](https://developer.mozilla.org/es/docs/Web/JavaScript)
+[![HTML5](https://img.shields.io/badge/HTML5-Semantic-orange?style=flat-square&logo=html5)](https://developer.mozilla.org/es/docs/Web/HTML5)
+[![CSS3](https://img.shields.io/badge/CSS3-Design-blue?style=flat-square&logo=css3)](https://www.w3.org/Style/CSS/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🌟 Características Clave
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+*   **Sorteo Aleatorio Controlado:** Generador de números aleatorios sin repetición (esferas de 1 a 75 / 90) que mantiene el historial de números cantados.
+*   **Generador Dinámico de Cartones:** Creación algorítmica de cartones basados en las reglas estándar del Bingo, asegurando que no haya números duplicados en el mismo cartón y respetando la distribución por columnas (B-I-N-G-O).
+*   **Detección Automática de Jugadas:**
+    *   **Línea:** Escaneo en tiempo real de filas completadas.
+    *   **Bingo:** Validación instantánea del cartón lleno para proclamar la victoria.
+*   **Interfaz Dinámica en Navegador:** Renderizado ágil del panel de control del sorteo y de los cartones de juego mediante la manipulación nativa del DOM.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tecnologías y Algoritmos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+*   **Lenguaje:** JavaScript ES6+
+*   **Interfaz:** HTML5 y hojas de estilo CSS3.
+*   **Algoritmo de Mezcla (Shuffle):** Implementa derivaciones eficientes para el mezclado aleatorio de los bolilleros virtuales garantizando imparcialidad del juego.
+*   **Manipulación del DOM:** Actualización interactiva de nodos sin necesidad de frameworks de terceros, garantizando rapidez y ligereza.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Despliegue Local
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+No requiere de servidores ni entornos pesados. Sigue estos pasos para jugarlo:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. Clonar el Repositorio
+```bash
+git clone https://github.com/bryanruiz1028/bingo-js.git
+cd bingo-js
+```
 
-### `npm run eject`
+### 2. Ejecutar la Aplicación
+Dado que es una aplicación del lado del cliente en JS nativo, simplemente haz doble clic sobre el archivo principal:
+*   `index.html`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+O si lo prefieres en Visual Studio Code, ábrelo y ejecútalo con la extensión **Live Server**.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📄 Licencia
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# GanaEnElBingo
-# bingo
+Este proyecto está bajo la Licencia MIT - consulta el archivo [LICENSE](LICENSE) para más detalles.
